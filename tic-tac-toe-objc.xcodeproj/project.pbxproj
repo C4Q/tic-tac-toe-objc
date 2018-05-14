@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		5459E5E720A9D1AF00A8CE44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E5E620A9D1AF00A8CE44 /* AppDelegate.m */; };
 		5459E5EA20A9D1AF00A8CE44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E5E920A9D1AF00A8CE44 /* ViewController.m */; };
-		5459E5ED20A9D1AF00A8CE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5459E5EB20A9D1AF00A8CE44 /* Main.storyboard */; };
 		5459E5EF20A9D1B300A8CE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5459E5EE20A9D1B300A8CE44 /* Assets.xcassets */; };
 		5459E5F220A9D1B300A8CE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5459E5F020A9D1B300A8CE44 /* LaunchScreen.storyboard */; };
 		5459E5F520A9D1B300A8CE44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E5F420A9D1B300A8CE44 /* main.m */; };
 		5459E5FF20A9D1B300A8CE44 /* tic_tac_toe_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E5FE20A9D1B300A8CE44 /* tic_tac_toe_objcTests.m */; };
 		5459E60A20A9D1B300A8CE44 /* tic_tac_toe_objcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E60920A9D1B300A8CE44 /* tic_tac_toe_objcUITests.m */; };
+		5459E61920A9DA5800A8CE44 /* UIView+borders.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E61820A9DA5800A8CE44 /* UIView+borders.m */; };
+		5459E61C20A9DFE900A8CE44 /* GameBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459E61B20A9DFE900A8CE44 /* GameBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		5459E5E620A9D1AF00A8CE44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5459E5E820A9D1AF00A8CE44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5459E5E920A9D1AF00A8CE44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5459E5EC20A9D1AF00A8CE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5459E5EE20A9D1B300A8CE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5459E5F120A9D1B300A8CE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5459E5F320A9D1B300A8CE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		5459E60520A9D1B300A8CE44 /* tic-tac-toe-objcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-toe-objcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5459E60920A9D1B300A8CE44 /* tic_tac_toe_objcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tic_tac_toe_objcUITests.m; sourceTree = "<group>"; };
 		5459E60B20A9D1B300A8CE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5459E61720A9DA5800A8CE44 /* UIView+borders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+borders.h"; sourceTree = "<group>"; };
+		5459E61820A9DA5800A8CE44 /* UIView+borders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+borders.m"; sourceTree = "<group>"; };
+		5459E61A20A9DFE900A8CE44 /* GameBrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameBrain.h; sourceTree = "<group>"; };
+		5459E61B20A9DFE900A8CE44 /* GameBrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,10 @@
 				5459E5E620A9D1AF00A8CE44 /* AppDelegate.m */,
 				5459E5E820A9D1AF00A8CE44 /* ViewController.h */,
 				5459E5E920A9D1AF00A8CE44 /* ViewController.m */,
-				5459E5EB20A9D1AF00A8CE44 /* Main.storyboard */,
+				5459E61A20A9DFE900A8CE44 /* GameBrain.h */,
+				5459E61B20A9DFE900A8CE44 /* GameBrain.m */,
+				5459E61720A9DA5800A8CE44 /* UIView+borders.h */,
+				5459E61820A9DA5800A8CE44 /* UIView+borders.m */,
 				5459E5EE20A9D1B300A8CE44 /* Assets.xcassets */,
 				5459E5F020A9D1B300A8CE44 /* LaunchScreen.storyboard */,
 				5459E5F320A9D1B300A8CE44 /* Info.plist */,
@@ -237,7 +244,6 @@
 			files = (
 				5459E5F220A9D1B300A8CE44 /* LaunchScreen.storyboard in Resources */,
 				5459E5EF20A9D1B300A8CE44 /* Assets.xcassets in Resources */,
-				5459E5ED20A9D1AF00A8CE44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5459E61920A9DA5800A8CE44 /* UIView+borders.m in Sources */,
 				5459E5EA20A9D1AF00A8CE44 /* ViewController.m in Sources */,
 				5459E5F520A9D1B300A8CE44 /* main.m in Sources */,
+				5459E61C20A9DFE900A8CE44 /* GameBrain.m in Sources */,
 				5459E5E720A9D1AF00A8CE44 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5459E5EB20A9D1AF00A8CE44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5459E5EC20A9D1AF00A8CE44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5459E5F020A9D1B300A8CE44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameBrain.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) UIStackView* gameStackView;
+@property (strong, nonatomic) UILabel* gameDescriptionLabel;
+@property (strong, nonatomic) UIButton* resetButton;
+@property (strong, nonatomic) GameBrain* gameBrain;
 
 @end
 
